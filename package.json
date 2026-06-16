@@ -19,16 +19,20 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "latest",
-    "axios": "^1.6.0",
-    "dotenv": "^16.0.0",
-    "googleapis": "^133.0.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "axios": "^1.18.0",
+    "dotenv": "^17.4.2",
+    "google-auth-library": "^10.7.0",
+    "googleapis": "^173.0.0",
     "open": "^11.0.0"
   },
+  "overrides": {
+    "google-auth-library": "^10.7.0"
+  },
   "devDependencies": {
-    "@types/node": "^20.17.28",
+    "@types/node": "^25.9.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.0.0"
+    "typescript": "^6.0.3"
   },
   "scripts": {
     "prepublishOnly": "npm run build",
